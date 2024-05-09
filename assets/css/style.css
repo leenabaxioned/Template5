@@ -84,7 +84,7 @@ sub { bottom: -.25em; }
 /*for all*/
 body {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Gill Sans", sans-serif;
 }
 
 a { 
@@ -100,18 +100,51 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 82%; 
   margin: 0 auto;
 }
+
+.icon::before { font-family: "FontAwesome"; }
 /*=================================
   Header styling starts here
 =================================*/
+header {
+  width: 94%;
+  position: absolute;
+  top: 0;
+  left: 3%;
+  z-index: 10;
+}
 
+header, .nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.head-nav { flex-basis: 40%; }
+.dropdown-content { display: none; }
+h1 a, .nav-menu li a , .call { color: #fff; }
 
+h1 a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 20px;
+}
 
-
-
+h1 a:before {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  content: "\f015";
+  color: #fff;
+  background-color: #20B3E8;
+  font-size: 30px;
+  text-indent: 0;
+  line-height: 37px;
+  text-align: center;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -119,6 +152,9 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+/* banner styling starts here */
+.banner-img { position: relative;}
+/* banner styling ends here */
 
 
 
